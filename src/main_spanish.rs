@@ -16,10 +16,10 @@ fn main() {
             println!("¡Es un empate!"); // Imprime un mensaje indicando un empate
             break; // Sale del bucle del juego
         }
-
-        // Cambia de jugador para el próximo turno
-        current_player = if current_player == 'X' { 'O' } else { 'X' }; // Alterna entre 'X' y 'O'
     }
+    
+    // Imprime el tablero final
+    print_board(&board);
 }
 
 // Función para imprimir el tablero del juego
@@ -105,4 +105,4 @@ fn player_turn(board: &mut [[char; 3]; 3], current_player: &mut char) {
     } else {
         println!("Esta posición ya está ocupada. Por favor, elige otra."); // Solicita una selección diferente
         player_turn(board, current_player); // Llamada recursiva para permitir al jugador elegir nuevamente
-    }
+   
