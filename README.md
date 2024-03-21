@@ -1,7 +1,7 @@
 # tic-tac-toe
 This is a Tic Tac Toe game implemented in Rust. The game allows two players to play against each other on a 3x3 grid until one player wins or the game ends in a draw.
 
-#Features
+# Features
 Two-player mode: Play against a friend locally.
 Simple CLI interface: Easy-to-use interface for entering moves.
 Win detection: Automatically detects when a player has won or if the game ends in a draw.
